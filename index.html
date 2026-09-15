@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elikante Charan | Cinematic Developer Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Cursor Spotlight Tracker -->
+    <div id="spotlight"></div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Noise Texture Overlay for Film Grain Effect -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-accent">CHARAN</span><span class="logo-dot">.</span>STUDIO
+        </div>
+        <nav class="nav-links">
+            <a href="#about"><span class="nav-num">01</span> ABOUT</a>
+            <a href="#projects"><span class="nav-num">02</span> PROJECTS</a>
+            <a href="#research"><span class="nav-num">03</span> RESEARCH</a>
+            <a href="#stack"><span class="nav-num">04</span> TECH STACK</a>
+            <a href="#contact"><span class="nav-num">05</span> CONTACT</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="sound-toggle" class="sound-btn" title="Toggle Sound FX">
+                <i class="fa-solid fa-volume-high"></i>
+                <span class="sound-text">AUDIO: ON</span>
+            </button>
+            <a href="https://github.com/elikantecharan" target="_blank" class="btn-github-nav">
+                <i class="fa-brands fa-github"></i> GITHUB
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="badge-tag">
+                    <span class="pulse-red"></span> CINEMATIC PORTFOLIO EDITION • 2026
+                </div>
+                <h1 class="hero-title">
+                    ELIKANTE <span class="glow-text">CHARAN</span>
+                </h1>
+                <p class="hero-subtitle">
+                    FULL STACK DEVELOPER <span class="divider-slash">//</span> AI & ML ENGINEER <span class="divider-slash">//</span> CREATIVE PROGRAMMER
+                </p>
+                <p class="hero-description">
+                    Crafting high-performance intelligent web applications, deep learning weather forecasting models, and AI-driven automation systems.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fa-solid fa-play"></i> EXPLORE FEATURED PROJECTS
+                    </a>
+                    <a href="#research" class="btn-secondary">
+                        <i class="fa-solid fa-film"></i> MAJOR LSTM RESEARCH
+                    </a>
+                </div>
+
+                <!-- Live Quick Stats Strip -->
+                <div class="quick-stats-strip">
+                    <div class="stat-item">
+                        <span class="stat-value">3+</span>
+                        <span class="stat-label">Production Repositories</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">94.2%</span>
+                        <span class="stat-label">LSTM Weather Accuracy</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">113-Pg</span>
+                        <span class="stat-label">B.Tech Thesis</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">GitHub Contribution Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Spotlight Section -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <span class="section-subtitle">01 // THE DIRECTOR'S CUT</span>
+                <h2 class="section-title">ABOUT <span class="glow-cyan">ELIKANTE CHARAN</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <!-- Profile Image Frame -->
+                <div class="profile-card">
+                    <div class="profile-img-container">
+                        <img src="profile.jpg" alt="Elikante Charan Profile" class="profile-img">
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="profile-badge">
+                        <span class="online-indicator"></span> AVAILABLE FOR FULL STACK & AI ROLES
+                    </div>
+                </div>
+
+                <!-- About Narrative -->
+                <div class="about-narrative">
+                    <h3 class="narrative-heading">Transforming Complex Code Into Seamless Digital Experiences.</h3>
+                    <p class="narrative-p">
+                        I am a Computer Science & Engineering graduate from <strong>JBIET (JB Institute of Engineering & Technology)</strong> with a deep passion for building robust full-stack web applications and intelligent machine learning models.
+                    </p>
+                    <p class="narrative-p">
+                        My expertise spans from training <strong>Keras/TensorFlow Recurrent Neural Networks (LSTM)</strong> for meteorological predictions to designing responsive web apps using <strong>React.js, Flask, and Tailwind CSS</strong>.
+                    </p>
+
+                    <!-- Core Highlights Badges -->
+                    <div class="highlights-grid">
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-brain glow-icon"></i>
+                            <div>
+                                <h4>Deep Learning & AI</h4>
+                                <p>Time-series forecasting, TF-IDF NLP scoring, Scikit-learn, TensorFlow.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-code glow-icon"></i>
+                            <div>
+                                <h4>Full Stack Development</h4>
+                                <p>React.js, Flask REST APIs, JavaScript (ES6+), HTML5/CSS3, Python.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-graduation-cap glow-icon"></i>
+                            <div>
+                                <h4>B.Tech in CSE</h4>
+                                <p>JB Institute of Engineering & Technology (JBIET), Hyderabad.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-diagram-project glow-icon"></i>
+                            <div>
+                                <h4>Production Deployment</h4>
+                                <p>GitHub Pages, Vercel, LocalStorage persistence, Automated Git pipelines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section (Now Playing) -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <span class="section-subtitle">02 // NOW PLAYING IN THEATERS</span>
+                <h2 class="section-title">FEATURED <span class="glow-amber">PROJECTS</span></h2>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Project Card 1: LSTM Weather -->
+                <div class="project-card featured-project">
+                    <div class="project-banner">
+                        <span class="project-badge badge-major"><i class="fa-solid fa-star"></i> MAJOR B.TECH THESIS</span>
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-cloud-sun-rain project-preview-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-year">2026</span>
+                            <span class="project-cat">DEEP LEARNING / FLASK</span>
+                        </div>
+                        <h3 class="project-title">Weather Forecasting Using LSTM</h3>
+                        <p class="project-desc">
+                            An advanced deep learning weather prediction web application trained on historical climate metrics using Long Short-Term Memory (LSTM) recurrent networks. Features real-time Flask predictions and dynamic charts.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Keras LSTM</span>
+                            <span>Flask</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://elikantecharan.github.io/weather-prediction-lstm/" target="_blank" class="btn-card-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> LIVE DASHBOARD
+                            </a>
+                            <a href="https://github.com/elikantecharan/weather-prediction-lstm" target="_blank" class="btn-card-outline">
+                                <i class="fa-brands fa-github"></i> REPOSITORY
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: AI Candidate Ranker -->
+                <div class="project-card">
+                    <div class="project-banner">
+                        <span class="project-badge badge-ai"><i class="fa-solid fa-robot"></i> AI / NLP SYSTEM</span>
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-user-check project-preview-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-year">2026</span>
+                            <span class="project-cat">PYTHON / SCIKIT-LEARN</span>
+                        </div>
+                        <h3 class="project-title">AI-Driven Candidate Ranking System</h3>
+                        <p class="project-desc">
+                            Automated candidate rank-scoring system utilizing TF-IDF vectorization and cosine similarity to evaluate job descriptions against applicant resumes for smart hiring decisions.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                            <span>TF-IDF NLP</span>
+                            <span>Pandas</span>
+                            <span>Automated Scoring</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/elikantecharan/ai-smart-recruitment-system" target="_blank" class="btn-card-primary">
+                                <i class="fa-brands fa-github"></i> VIEW REPOSITORY
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Calendar Event System -->
+                <div class="project-card">
+                    <div class="project-banner">
+                        <span class="project-badge badge-react"><i class="fa-brands fa-react"></i> REACT FRONTEND</span>
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-calendar-days project-preview-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-year">2026</span>
+                            <span class="project-cat">REACT.JS / LOCALSTORAGE</span>
+                        </div>
+                        <h3 class="project-title">Calendar Event Management System</h3>
+                        <p class="project-desc">
+                            A sleek, responsive React web app for scheduling, filtering, and managing events with browser LocalStorage persistence, category filters, and notification toasts.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>React.js</span>
+                            <span>JavaScript ES6</span>
+                            <span>CSS Grid</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://elikantecharan.github.io/calendar-event-management-system/" target="_blank" class="btn-card-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> LIVE DASHBOARD
+                            </a>
+                            <a href="https://github.com/elikantecharan/calendar-event-management-system" target="_blank" class="btn-card-outline">
+                                <i class="fa-brands fa-github"></i> REPOSITORY
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Major Research Thesis Breakdown (Cinematic Focus) -->
+        <section id="research" class="research-section">
+            <div class="research-container">
+                <div class="research-badge">
+                    <i class="fa-solid fa-book-bookmark"></i> 113-PAGE B.TECH MAJOR PROJECT REPORT
+                </div>
+                <h2 class="research-title">
+                    WEATHER FORECASTING USING <span class="glow-cyan">LSTM NEURAL NETWORKS</span>
+                </h2>
+                <p class="research-sub">
+                    Comprehensive research conducted at JB Institute of Engineering & Technology (JBIET), focusing on overcoming non-linear weather volatility through deep time-series learning.
+                </p>
+
+                <!-- Metrics Grid -->
+                <div class="research-metrics">
+                    <div class="metric-card">
+                        <div class="metric-val">5-Layer</div>
+                        <div class="metric-lbl">LSTM Architecture</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-val">94.2%</div>
+                        <div class="metric-lbl">Prediction Accuracy</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-val">0.012</div>
+                        <div class="metric-lbl">Min Mean Squared Error</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-val">Flask API</div>
+                        <div class="metric-lbl">Real-time Deployment</div>
+                    </div>
+                </div>
+
+                <div class="research-actions">
+                    <a href="https://elikantecharan.github.io/weather-prediction-lstm/" target="_blank" class="btn-primary">
+                        <i class="fa-solid fa-globe"></i> ACCESS RESEARCH DASHBOARD
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Matrix Section -->
+        <section id="stack" class="stack-section">
+            <div class="section-header">
+                <span class="section-subtitle">04 // TECH STACK ARSENAL</span>
+                <h2 class="section-title">SKILLS & <span class="glow-violet">TECHNOLOGIES</span></h2>
+            </div>
+
+            <div class="stack-grid">
+                
+                <div class="stack-category">
+                    <div class="stack-cat-header">
+                        <i class="fa-solid fa-brain cat-icon"></i>
+                        <h3>Artificial Intelligence & ML</h3>
+                    </div>
+                    <div class="stack-tags">
+                        <div class="stack-item"><i class="fa-brands fa-python"></i> Python</div>
+                        <div class="stack-item"><i class="fa-solid fa-network-wired"></i> TensorFlow</div>
+                        <div class="stack-item"><i class="fa-solid fa-layer-group"></i> Keras LSTM</div>
+                        <div class="stack-item"><i class="fa-solid fa-chart-pie"></i> Scikit-Learn</div>
+                        <div class="stack-item"><i class="fa-solid fa-table"></i> Pandas / NumPy</div>
+                        <div class="stack-item"><i class="fa-solid fa-file-word"></i> TF-IDF Vectorization</div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <div class="stack-cat-header">
+                        <i class="fa-solid fa-desktop cat-icon"></i>
+                        <h3>Frontend Engineering</h3>
+                    </div>
+                    <div class="stack-tags">
+                        <div class="stack-item"><i class="fa-brands fa-react"></i> React.js</div>
+                        <div class="stack-item"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
+                        <div class="stack-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+                        <div class="stack-item"><i class="fa-brands fa-css3-alt"></i> CSS3 / Grid / Flexbox</div>
+                        <div class="stack-item"><i class="fa-solid fa-wand-magic-sparkles"></i> Tailwind CSS</div>
+                        <div class="stack-item"><i class="fa-solid fa-mobile-screen"></i> Responsive UI/UX</div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <div class="stack-cat-header">
+                        <i class="fa-solid fa-server cat-icon"></i>
+                        <h3>Backend & Cloud APIs</h3>
+                    </div>
+                    <div class="stack-tags">
+                        <div class="stack-item"><i class="fa-solid fa-pepper-hot"></i> Flask Framework</div>
+                        <div class="stack-item"><i class="fa-solid fa-plug"></i> RESTful APIs</div>
+                        <div class="stack-item"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                        <div class="stack-item"><i class="fa-solid fa-database"></i> SQL Databases</div>
+                        <div class="stack-item"><i class="fa-solid fa-box-archive"></i> LocalStorage APIs</div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <div class="stack-cat-header">
+                        <i class="fa-solid fa-screwdriver-wrench cat-icon"></i>
+                        <h3>DevOps & Workflow</h3>
+                    </div>
+                    <div class="stack-tags">
+                        <div class="stack-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+                        <div class="stack-item"><i class="fa-brands fa-github"></i> GitHub & GitHub Actions</div>
+                        <div class="stack-item"><i class="fa-solid fa-cloud-arrow-up"></i> GitHub Pages</div>
+                        <div class="stack-item"><i class="fa-solid fa-code"></i> VS Code</div>
+                        <div class="stack-item"><i class="fa-solid fa-terminal"></i> PowerShell / Bash</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact & Outro Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-card glass-panel">
+                <div class="contact-content">
+                    <span class="section-subtitle">05 // GET IN TOUCH</span>
+                    <h2 class="contact-title">LET'S BUILD SOMETHING <span class="glow-cyan">EXTRAORDINARY</span></h2>
+                    <p class="contact-desc">
+                        Whether you have an exciting full-stack opportunity, an AI/ML research collaboration, or just want to connect, my inbox is always open.
+                    </p>
+
+                    <div class="contact-buttons">
+                        <a href="mailto:charanelikante@gmail.com" class="btn-primary">
+                            <i class="fa-solid fa-envelope"></i> SEND AN EMAIL
+                        </a>
+                        <button id="copy-email-btn" class="btn-secondary">
+                            <i class="fa-solid fa-copy"></i> COPY EMAIL ADDRESS
+                        </button>
+                        <a href="https://github.com/elikantecharan" target="_blank" class="btn-github-large">
+                            <i class="fa-brands fa-github"></i> VISIT GITHUB PROFILE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-accent">CHARAN</span>.STUDIO
+            </div>
+            <p class="footer-copy">
+                Designed & Built with <i class="fa-solid fa-heart glow-red"></i> by <strong>Elikante Charan</strong> • Nov 23, 2025 - 2026
+            </p>
+            <a href="#hero" class="back-to-top">
+                <i class="fa-solid fa-arrow-up"></i> BACK TO TOP
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
